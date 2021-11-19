@@ -1,4 +1,4 @@
-import random
+import random,os
 
 #対戦結果の初期化
 win=0
@@ -54,8 +54,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                 print("はっはっはっはっはー！私のほうが強いのだ！")
+                lose+=1
             elif botres==2:
                 print("私の勝ちだ。どうして負けたか考えるがよい。")
+                lose+=1
             else:
                 print("どうやら神は私に味方するようだ。")
                 lose+=1
@@ -64,8 +66,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                 print("くっ、、、おぬし、強いなっ、、、！ﾊﾞﾀﾘ")
+                win+=1
             elif botres==2:
                 print("私の負けだ。君は強いな。")
+                win+=1
             else:
                 print("どうしてだよｵｵｵｵｵｵｵｵ!!!!!!!!!!!")
                 win+=1
@@ -79,8 +83,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                 print("はっはっはっはっはー！私のほうが強いのだ！")
+                lose+=1
             elif botres==2:
                 print("私の勝ちだ。どうして負けたか考えるがよい。")
+                lose+=1
             else:
                 print("どうやら神は私に味方するようだ。")
                 lose+=1
@@ -89,8 +95,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                  print("くっ、、、おぬし、強いなっ、、、！ﾊﾞﾀﾘ")
+                 win+=1
             elif botres==2:
                 print("私の負けだ。君は強いな。")
+                win+=1
             else:
                 print("どうしてだよｵｵｵｵｵｵｵｵ!!!!!!!!!!!")
                 win+=1
@@ -104,8 +112,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                 print("はっはっはっはっはー！私のほうが強いのだ！")
+                lose+=1
             elif botres==2:
                 print("私の勝ちだ。どうして負けたか考えるがよい。")
+                lose+=1
             else:
                 print("どうやら神は私に味方するようだ。")
                 lose+=1
@@ -114,8 +124,10 @@ while True:
             botres=random.randint(1,3)
             if botres==1:
                 print("くっ、、、おぬし、強いなっ、、、！ﾊﾞﾀﾘ")
+                win+=1
             elif botres==2:
                 print("私の負けだ。君は強いな。")
+                win+=1
             else:
                 print("どうしてだよｵｵｵｵｵｵｵｵ!!!!!!!!!!!")
                 win+=1
@@ -132,6 +144,7 @@ while True:
         print("勝った回数\n",win)
         print("負けた回数\n",lose)
         print("引き分けの回数\n",draw)
+        os.system('PAUSE')
         break
 
     else :
@@ -141,4 +154,5 @@ while True:
         print("勝った回数\n",win)
         print("負けた回数\n",lose)
         print("引き分けの回数\n",draw)
+        os.system('PAUSE')
         break
