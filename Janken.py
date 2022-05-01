@@ -27,8 +27,14 @@ while True:
         playershand='パー'
 
     else : #プレイヤー側の不手際は見逃さない
-        print("そんな手札はないよ！半角で1~3を入力してくれ！")
-        errorcode=1
+        exitnum=random.randint(1,2)
+        if exitnum==1 :
+            print("ルールを守れ（石本\n")
+        else :
+            print("指示にしたがわない者は単位あげないぞ（石本\n")
+            
+        os.system('PAUSE')
+        break
 
     #Bot側の手札の定義
     if bots==1:
